@@ -33,15 +33,7 @@ var htmlTemplate = `<html>
     <title>
         $(title)
     </title>
-    <style>
-        .container
-        {
-            max-width:800px;
-            margin:0 auto;
-            color:grey;
-            Font-family:sans-serif;
-        }
-    </style>
+     <link href="/ui/style.css" rel="stylesheet" />
     </head>
     
     <body>
