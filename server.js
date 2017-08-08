@@ -45,19 +45,13 @@ var htmlTemplate = `<html>
         </div>
         <hr/>
         <h3>
-            Article One
+            $(heading)
         </h3>
         <div>
-            Sept 8, 2017
+           $(date)
         </div>
         <div>
-            <p>
-                This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.
-            </p>
-            
-              <p>
-                This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.
-            </p>
+         $(content)
         </div>
        </div>
     </body>
