@@ -62,6 +62,9 @@ var htmlTemplate = `<html>
        </div>
     </body>
 </html>`;
+
+return htmlTemplate;
+
 }
 
 
