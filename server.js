@@ -8,7 +8,7 @@ app.use(morgan('combined'));
 var articleOne = {
     title:  'Article One | Gaurav Tiwari',
     heading: 'Article One',
-    date: ' Sept 8, 2017',
+    date: 'Sept 8, 2017',
     content:    
      `<p>
           This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.
@@ -21,7 +21,7 @@ var articleOne = {
     
 };
 
-function createTemplate(data){
+function createTemplate(data) {
 var title = data.title;
 var date = data.date;
 var heading = data.heading;
@@ -65,7 +65,7 @@ app.get('/', function (req, res) {
 });
 
 app.get('/article-one', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
+  res.send(createTemplate(articleOne))
 });
 
 app.get('/article-two', function (req, res) {
