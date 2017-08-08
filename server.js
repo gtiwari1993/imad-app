@@ -7,7 +7,7 @@ app.use(morgan('combined'));
 
 var articleOne = {
     title:  'Article One | Gaurav Tiwari',
-    heading: 'Article One' ,
+    heading: 'Article One',
     date: ' Sept 8, 2017',
     content:    
      `<p>
