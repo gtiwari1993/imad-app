@@ -6,10 +6,10 @@ var app = express();
 app.use(morgan('combined'));
 
 var articleOne = {
-    title:  'Article One | Gaurav Tiwari',
-    heading: 'Article One',
-    date: 'Sept 8, 2017',
-    content:    
+title:'Article One | Gaurav Tiwari',
+heading:'Article One',
+date:'Sept 8, 2017',
+content:    
      `<p>
           This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.
      </p>
@@ -57,7 +57,7 @@ var htmlTemplate = `<html>
 
 return htmlTemplate;
 
-}
+};
 
 
 app.get('/', function (req, res) {
