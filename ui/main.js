@@ -1,5 +1,5 @@
 console.log('Loaded!');
 
 //Change the text of the main-text div
-var element = document.getElementbyid('main-text');
-element.innerHTMl = 'New Value';
+var element = document.getElementbyId('main-text');
+element.innerHTML = 'New Value';
