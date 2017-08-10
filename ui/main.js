@@ -31,12 +31,12 @@ button.onclick = function()
     var request - new XMLHttpRequest();
     
     //capture the response and store it in a variable
-    request.onreadystatechange =function()
+    request.onreadystatechange = function()
     {
         if(request.readyState === XMLHttpRequest.DONE)
         {
             //take some action
-            if(request.status ===200)
+            if(request.status === 200)
             {
                 var counter = request.responseText;
                 var span = document.getElementById('count');
@@ -46,7 +46,7 @@ button.onclick = function()
         }
     };
     //make the request
-    request.open('GET','http://http://tiwarigaurav320.imad.hasura-app.io/counter',true);
+    request.open('GET','http://tiwarigaurav320.imad.hasura-app.io/counter',true);
     request.send(null);
 
     
