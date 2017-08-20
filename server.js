@@ -8,7 +8,7 @@ user:'tiwarigaurav320',
 database:'tiwarigaurav320',
 host:'db.imad.hasura-app.io',
 port:'5432',
-password:process.emv.DB_PASSWORD  //environment variable
+password:process.env.DB_PASSWORD  //environment variable
 };
 
 
